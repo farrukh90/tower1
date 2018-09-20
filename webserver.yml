@@ -2,11 +2,5 @@
 - hosts: all
   tasks: 
     - name: Install packages
-      package: 
-        name: "{{ item }}"
-        state: present
-      with_items:
-        - httpd
-        - php
-        - telnet
-        - lftp
+      yum: 
+        name: httpd
