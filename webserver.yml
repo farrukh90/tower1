@@ -2,7 +2,7 @@
 - hosts: all
   tasks: 
     - name: Install packages
-      packages: 
+      package: 
         name: "{{ item }}"
         state: present
       with_items:
